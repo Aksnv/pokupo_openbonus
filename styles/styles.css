@@ -427,6 +427,41 @@ body {
 
 /* Бонусная программа (нет карты) */
 
+.bonus-menu {
+  float: left;
+  padding-top: 26px;
+}
+
+.bonus-menu a {
+  position: relative;
+  display: block;
+  width: 60px;
+  height: 60px;
+  border: 4px solid #ffa800;
+  border-radius: 50%;
+}
+
+.bonus-menu a::before {
+  position: absolute;
+  top: 18px;
+  left: 17px;
+  content: "";
+  display: block;
+  width: 17px;
+  height: 17px;
+  background-image: url("../images/sprite.png");
+  background-position: -208px -280px;
+}
+
+.bonus-menu a:hover {
+  border-width: 5px;
+}
+
+.bonus-menu a:hover::before {
+  top: 17px;
+  left: 16px;
+}
+
 .bonus-programm {
   overflow: hidden;
   margin-bottom: 10px;
