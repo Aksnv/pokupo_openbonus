@@ -18,11 +18,12 @@ body {
   height: 100%;
   background-color: #333;
   opacity: 0.5;
+  z-index: 98;
 }
 
 /* Персональная бонусная карта (popup) */
 
-.popup--bonus-card {
+.popup--1 {
   position: fixed;
   top: calc(50% - 274px);
   left: calc(50% - 310px);
@@ -31,9 +32,10 @@ body {
   background-color: white;
   border-radius: 15px;
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.3);
+  z-index: 99;
 }
 
-.popup--bonus-card .popup__top {
+.popup--1 .popup__top {
   position: relative;
   height: 187px;
   background-image: url("../images/bg--green.png");
@@ -42,7 +44,7 @@ body {
   border-top-right-radius: 15px;
 }
 
-.popup--bonus-card .popup__top::before {
+.popup--1 .popup__top::before {
   position: absolute;
   left: calc(50% - 164px);
   top: -51px;
@@ -53,7 +55,7 @@ body {
   background-image: url("../images/bonus-card.png");
 }
 
-.popup--bonus-card .popup__top::after {
+.popup--1 .popup__top::after {
   position: absolute;
   left: calc(50% - 8px);
   bottom: -7px;
@@ -91,13 +93,13 @@ body {
   background-position: -342px -142px;
 }
 
-.popup--bonus-card .popup__bottom {
+.popup--1 .popup__bottom {
   text-align: center;
   padding-top: 26px;
   padding-bottom: 30px;
 }
 
-.popup--bonus-card .popup__bottom p {
+.popup--1 .popup__bottom p {
   font-size: 13px;
   font-weight: 400;
   line-height: 20px;
@@ -105,14 +107,14 @@ body {
   opacity: 0.8;
 }
 
-.popup--bonus-card .popup__bottom p:first-child {
+.popup--1 .popup__bottom p:first-child {
   font-size: 18px;
   font-weight: 300;
   color: black;
   opacity: 1;
 }
 
-.popup--bonus-card .popup__bottom p:first-child strong {
+.popup--1 .popup__bottom p:first-child strong {
   display: block;
   font-size: 30px;
   font-weight: 700;
@@ -120,7 +122,7 @@ body {
   margin-bottom: 32px;
 }
 
-.popup--bonus-card .popup__button {
+.popup--1 .popup__button {
   position: relative;
   display: inline-block;
   vertical-align: top;
@@ -138,15 +140,15 @@ body {
   border-radius: 30px;
 }
 
-.popup--bonus-card .popup__button:hover {
+.popup--1 .popup__button:hover {
   background-color: #ffa800;
 }
 
-.popup--bonus-card .popup__button span {
+.popup--1 .popup__button span {
   padding-left: 15px;
 }
 
-.popup--bonus-card .popup__button::before {
+.popup--1 .popup__button::before {
   position: absolute;
   top: 20px;
   left: 54px;
@@ -166,3 +168,6 @@ body {
   text-decoration: underline;
   color: #187b93;
 }
+
+/* Получение бонусной карты (popup) */
+

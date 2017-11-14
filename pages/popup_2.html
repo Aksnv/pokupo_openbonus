@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Получение бонусной карты</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../styles/styles.css">
+</head>
+<body>
+  <h2>OpenBonus</h2>
+  <ul>
+    <li><a href="pages/popup_1.html">Персональная бонусная карта</a></li>
+    <li><a href="pages/popup_2.html">Получение бонусной карты</a></li>
+    <li><a href=""></a></li>
+    <li><a href=""></a></li>
+    <li><a href=""></a></li>
+  </ul>
+  
+  <div class="overlay"></div>
+
+  <div class="popup popup--2">
+    <div class="popup__top">
+      <button class="popup__close-button--top"></button>
+      <h1>Получение бонусной карты</h1>
+    </div>
+    <div class="popup__bottom">
+      <form name="bonus-card__form--get" method="POST" action="#" class="bonus-card__form--get">
+        <label for="phone">Телефон<span>*</span></label>
+        <input type="text" name="phone" id="phone" placeholder="+7 920 558 60 94">
+        <label for="surname">Фамилия</label>
+        <input type="text" name="surname" id="surname" placeholder="Фамилия">
+        <label for="name">Имя</label>
+        <input type="text" name="name" id="name" placeholder="Имя">
+        <label for="patronymic">Отчество</label>
+        <input type="text" name="patronymic" id="patronymic" placeholder="Отчество">
+        <div class="choose-gender">
+          <input type="radio" name="gender" class="gender" id="gender--male">
+          <label for="gender--male">Я мужчина</label>
+          <input type="radio" name="gender" class="gender" id="gender--female">
+          <label for="gender--female">Я женщина</label>
+        </div>
+        <input type="submit" name="submit" class="submit" value="Получить">
+      </form>
+    </div>
+  </div>
+  
+</body>
+</html>
