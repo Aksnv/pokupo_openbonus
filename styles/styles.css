@@ -468,6 +468,58 @@ body {
   left: 16px;
 }
 
+.bonus-menu p {
+  display: none;
+}
+
+.bonus-menu--login {
+  margin-right: 7px;
+  padding-top: 40px;
+  padding-left: 20px;
+}
+
+.bonus-menu--login a {
+  display: none;
+}
+
+.bonus-menu--login p {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  margin-bottom: 0;
+  color: black;
+}
+
+.bonus-menu--login p:nth-child(2) {
+  position: relative;
+  cursor: pointer;
+}
+
+.bonus-menu--login p:nth-child(2)::before {
+  position: absolute;
+  top: 3px;
+  left: -18px;
+  content: "";
+  display: block;
+  width: 13px;
+  height: 10px;
+  background-image: url("../images/sprite.png");
+  background-position: -232px -305px;
+}
+
+.bonus-menu--login p:nth-child(2):hover {
+  color: #ffa800;
+}
+
+.bonus-menu--login p:nth-child(2):hover::before {
+  background-position: -232px -288px;
+}
+
+.bonus-menu--login p:last-child {
+  color: #7caa1f;
+}
+
 .bonus-programm {
   overflow: hidden;
   margin-bottom: 10px;
