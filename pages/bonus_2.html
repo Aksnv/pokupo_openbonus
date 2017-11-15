@@ -1060,17 +1060,39 @@
             <div id="content_pkp" style="display: block;"><!-- version 1.0-->
               <div class="b-catalog-item" style="">
                 
-                <div class="bonus-programm">
+                <div class="bonus-programm bonus-programm--login">
                   <h1>Бонусная программа</h1>
                   <div class="bonus-programm__image">
-                    <img src="../images/card--grey.png" alt="Бонусная карта">
-                    <a href="#" class="bonus-programm__button">Получить карту</a>
+                    <img src="../images/card--black.png" alt="Бонусная карта">
+                    <p>№ <span>000023</span></p>
+                    <p>Накоплено бонусов <span>1358.30 Р</span></p>
                   </div>
                   <div class="bonus-programm__content">
-                    <h3>Копите бонусы<br> и оплачивайте ими покупки</h3>
-                    <p>Бонусная карта позволит вам копить бонусы, начисляемые после каждой покупки на вышу карту с индивидуальным номером. Количество накопленных бонусов, вы в любой момент сможете посмотреть в личном кабинете, в разделе «Бонусная программа»</p>
-                    <p>Совершая покупку, вы сможете расплачиваться накопленными бонусами или продолжать их копить, для более выгодной скидки.</p>
-                  </div>                  
+                    <h2>Игорь Сибилев</h2>
+                    <p>Телефон <strong>+7 920 558 60 94</strong></p>
+                    <button>Редактировать данные</button>
+                  </div>
+                  <div class="bonus-programm__personal">
+                    <form name="bonus-card__form" method="POST" action="#" class="bonus-card__form">
+                      <h2>Персональные данные владельца карты</h2>
+                      <label for="surname">Фамилия</label>
+                      <input type="text" name="surname" id="surname" placeholder="Фамилия">
+                      <label for="name">Имя</label>
+                      <input type="text" name="name" id="name" placeholder="Имя">
+                      <div class="choose-gender">
+                        <input type="radio" name="gender" class="gender" id="gender--male" checked="checked">
+                        <label for="gender--male" class="gender--male">Я мужчина</label>
+                        <input type="radio" name="gender" class="gender" id="gender--female">
+                        <label for="gender--female" class="gender--female">Я женщина</label>
+                      </div>
+                      <label for="patronymic">Отчество</label>
+                      <input type="text" name="patronymic" id="patronymic" placeholder="Отчество">
+                      <label for="phone">Телефон <span>*</span></label>
+                      <input type="text" name="phone" id="phone" placeholder="+7 920 558 60 94">
+                      <input type="submit" name="submit" class="submit" value="Сохранить">
+                      <input type="submit" name="submit" class="submit" value="Отмена">
+                    </form>
+                  </div>
                 </div>
 
               </div>

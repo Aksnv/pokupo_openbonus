@@ -430,6 +430,7 @@ body {
 .bonus-menu {
   float: left;
   padding-top: 26px;
+  padding-right: 7px;
 }
 
 .bonus-menu a {
@@ -513,4 +514,8 @@ body {
 .bonus-programm__button:hover {
   background-color: #ffa800;
 }
+
+/* Бонусная программа (есть карта) */
+
+
 
